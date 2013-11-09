@@ -25,7 +25,7 @@
         
         <cfset var API = structNew()>
         
-        <cfhttp url="http://xwww.telize.com/geoip/#arguments.ip#" result="API"></cfhttp>
+        <cfhttp url="http://www.telize.com/geoip/#arguments.ip#" result="API"></cfhttp>
     
     	<cfreturn deserializeJSON(API.filecontent)>
     </cffunction>
