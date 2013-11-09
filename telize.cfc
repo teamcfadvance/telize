@@ -1,5 +1,9 @@
 <cfcomponent hint="telize.com api cfml wrapper">
 
+	<cffunction name="init" access="public" output="false" hint="I initialize the component.">
+		<cfreturn this>
+	</cffunction>
+
 	<cffunction name="getIP" hint="This function gets the current ipaddress of client" output="no">
     	<cfargument name="json" default="" required="no" hint="Pass in json if you want JSON returned">
     
@@ -21,7 +25,7 @@
         
         <cfset var API = structNew()>
         
-        <cfhttp url="http://www.telize.com/geoip/#arguments.ip#" result="API"></cfhttp>
+        <cfhttp url="http://xwww.telize.com/geoip/#arguments.ip#" result="API"></cfhttp>
     
     	<cfreturn deserializeJSON(API.filecontent)>
     </cffunction>
