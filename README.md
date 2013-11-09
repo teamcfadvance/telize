@@ -3,4 +3,14 @@ telize
 
 telize.com api cfml wrapper
 
-test Randy
+http://www.telize.com/
+
+
+How to instantiate:
+===========
+
+* <cfset telize = createObject("component","telize")>
+
+
+Methods:
+===========
