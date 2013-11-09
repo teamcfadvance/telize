@@ -9,6 +9,8 @@
     
     	<cfset var API = structNew()>
         
+        <cfif arguments.json is not "json" and arguments.json is not ""><cfset arguments.json=""></cfif>
+        
         <cfhttp url="http://www.telize.com/#arguments.json#ip" result="API"></cfhttp>
     
     	<cfif arguments.json is "json">
